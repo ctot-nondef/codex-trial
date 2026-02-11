@@ -7,9 +7,33 @@
 	},
 	"AppHeader": {
 		"links": {
-			"home": "Home"
+			"home": "Home",
+			"repos": "Repositories"
 		},
 		"navigation-main": "Main"
+	},
+	"CachesPage": {
+		"back": "Back to repositories",
+		"cache-id": "Cache id: {id}",
+		"delete": "Delete caches",
+		"description": "Manage GitHub Actions caches for {owner}/{repo}.",
+		"error": "Unable to load caches.",
+		"errors": {
+			"delete-failed": "Deleting caches failed."
+		},
+		"fields": {
+			"key": "Cache key",
+			"ref": "Git ref"
+		},
+		"filters": "Filters",
+		"loading": "Loading caches...",
+		"meta": {
+			"title": "Actions caches"
+		},
+		"refresh": "Refresh",
+		"retry": "Retry",
+		"size": "Size: {size} bytes",
+		"title": "Actions caches"
 	},
 	"ColorSchemeToggle": {
 		"change-color-scheme": "Change color scheme",
@@ -26,6 +50,28 @@
 			"twitter": "{'@acdh_oeaw'}"
 		},
 		"skip-to-main-content": "Skip to main content"
+	},
+	"EnvironmentsPage": {
+		"back": "Back to repositories",
+		"create": "Create or update environment",
+		"description": "Manage environments for {owner}/{repo}.",
+		"error": "Unable to load environments.",
+		"errors": {
+			"missing-name": "Environment name is required.",
+			"save-failed": "Saving environment failed."
+		},
+		"fields": {
+			"name": "Environment name",
+			"wait-timer": "Wait timer (minutes)"
+		},
+		"loading": "Loading environments...",
+		"meta": {
+			"title": "Environments"
+		},
+		"retry": "Retry",
+		"save": "Save",
+		"title": "Environments",
+		"wait-timer": "Wait timer: {value}"
 	},
 	"ErrorBoundary": {
 		"error": "Error"
@@ -44,6 +90,9 @@
 		"title": "Imprint"
 	},
 	"IndexPage": {
+		"cta-login": "Sign in with GitHub",
+		"cta-repos": "View repositories",
+		"description": "Sign in to manage GitHub Actions environments, secrets, variables, and caches.",
 		"meta": {
 			"title": "Home"
 		},
@@ -52,6 +101,14 @@
 	"LocaleSwitcher": {
 		"current-locale": "Current language: {locale}",
 		"switch-locale": "Switch language to {locale}"
+	},
+	"LoginPage": {
+		"cta": "Continue with GitHub",
+		"description": "Authorize this app to manage your repositories.",
+		"meta": {
+			"title": "Login"
+		},
+		"title": "Login"
 	},
 	"Manifest": {
 		"description": "ACDH App",
@@ -63,5 +120,76 @@
 			"title": "Page not found"
 		},
 		"title": "Page not found"
+	},
+	"ReposPage": {
+		"actions": {
+			"caches": "Caches",
+			"environments": "Environments",
+			"secrets": "Secrets",
+			"variables": "Variables"
+		},
+		"description": "Select a repository to manage its Actions configuration.",
+		"error": "Unable to load repositories.",
+		"loading": "Loading repositories...",
+		"logout": "Sign out",
+		"meta": {
+			"title": "Repositories"
+		},
+		"private": "Private",
+		"public": "Public",
+		"retry": "Retry",
+		"title": "Repositories"
+	},
+	"SecretsPage": {
+		"back": "Back to repositories",
+		"create": "Create secret",
+		"description": "Manage repository secrets for {owner}/{repo}.",
+		"error": "Unable to load secrets.",
+		"errors": {
+			"delete-failed": "Deleting secret failed.",
+			"missing-fields": "Secret name and value are required.",
+			"missing-value": "Secret value is required.",
+			"save-failed": "Saving secret failed."
+		},
+		"fields": {
+			"name": "Secret name",
+			"value": "Secret value"
+		},
+		"loading": "Loading secrets...",
+		"meta": {
+			"title": "Secrets"
+		},
+		"retry": "Retry",
+		"save": "Save",
+		"title": "Secrets",
+		"update": "Update",
+		"update-label": "Update secret {name}",
+		"update-placeholder": "New secret value",
+		"delete": "Delete"
+	},
+	"VariablesPage": {
+		"back": "Back to repositories",
+		"create": "Create variable",
+		"description": "Manage repository variables for {owner}/{repo}.",
+		"delete": "Delete",
+		"error": "Unable to load variables.",
+		"errors": {
+			"delete-failed": "Deleting variable failed.",
+			"missing-fields": "Variable name and value are required.",
+			"save-failed": "Saving variable failed."
+		},
+		"fields": {
+			"name": "Variable name",
+			"value": "Variable value"
+		},
+		"loading": "Loading variables...",
+		"meta": {
+			"title": "Variables"
+		},
+		"retry": "Retry",
+		"save": "Save",
+		"title": "Variables",
+		"update": "Update",
+		"update-label": "Update variable {name}"
 	}
 }

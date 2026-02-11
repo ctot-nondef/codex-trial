@@ -7,9 +7,33 @@
 	},
 	"AppHeader": {
 		"links": {
-			"home": "Startseite"
+			"home": "Startseite",
+			"repos": "Repositories"
 		},
 		"navigation-main": "Hauptnavigation"
+	},
+	"CachesPage": {
+		"back": "Zurück zu den Repositories",
+		"cache-id": "Cache-ID: {id}",
+		"delete": "Caches löschen",
+		"description": "Verwalte GitHub Actions Caches für {owner}/{repo}.",
+		"error": "Caches konnten nicht geladen werden.",
+		"errors": {
+			"delete-failed": "Caches konnten nicht gelöscht werden."
+		},
+		"fields": {
+			"key": "Cache-Schlüssel",
+			"ref": "Git-Ref"
+		},
+		"filters": "Filter",
+		"loading": "Caches werden geladen...",
+		"meta": {
+			"title": "Actions Caches"
+		},
+		"refresh": "Aktualisieren",
+		"retry": "Erneut versuchen",
+		"size": "Größe: {size} Bytes",
+		"title": "Actions Caches"
 	},
 	"ColorSchemeToggle": {
 		"change-color-scheme": "Farbschema ändern",
@@ -26,6 +50,28 @@
 			"twitter": "{'@acdh_oeaw'}"
 		},
 		"skip-to-main-content": "Zum Hauptinhalt springen"
+	},
+	"EnvironmentsPage": {
+		"back": "Zurück zu den Repositories",
+		"create": "Environment erstellen oder aktualisieren",
+		"description": "Verwalte Environments für {owner}/{repo}.",
+		"error": "Environments konnten nicht geladen werden.",
+		"errors": {
+			"missing-name": "Environment-Name ist erforderlich.",
+			"save-failed": "Environment konnte nicht gespeichert werden."
+		},
+		"fields": {
+			"name": "Environment-Name",
+			"wait-timer": "Wartezeit (Minuten)"
+		},
+		"loading": "Environments werden geladen...",
+		"meta": {
+			"title": "Environments"
+		},
+		"retry": "Erneut versuchen",
+		"save": "Speichern",
+		"title": "Environments",
+		"wait-timer": "Wartezeit: {value}"
 	},
 	"ErrorBoundary": {
 		"error": "Fehler"
@@ -44,6 +90,9 @@
 		"title": "Impressum"
 	},
 	"IndexPage": {
+		"cta-login": "Mit GitHub anmelden",
+		"cta-repos": "Repositories anzeigen",
+		"description": "Anmelden, um GitHub Actions Environments, Secrets, Variablen und Caches zu verwalten.",
 		"meta": {
 			"title": "Startseite"
 		},
@@ -52,6 +101,14 @@
 	"LocaleSwitcher": {
 		"current-locale": "Aktuelle Sprache: {locale}",
 		"switch-locale": "Sprache zu {locale} wechseln"
+	},
+	"LoginPage": {
+		"cta": "Mit GitHub fortfahren",
+		"description": "Autorisiere diese App, um deine Repositories zu verwalten.",
+		"meta": {
+			"title": "Login"
+		},
+		"title": "Login"
 	},
 	"Manifest": {
 		"description": "ACDH App",
@@ -63,5 +120,76 @@
 			"title": "Seite nicht gefunden"
 		},
 		"title": "Seite nicht gefunden"
+	},
+	"ReposPage": {
+		"actions": {
+			"caches": "Caches",
+			"environments": "Environments",
+			"secrets": "Secrets",
+			"variables": "Variablen"
+		},
+		"description": "Wähle ein Repository, um dessen Actions-Konfiguration zu verwalten.",
+		"error": "Repositories konnten nicht geladen werden.",
+		"loading": "Repositories werden geladen...",
+		"logout": "Abmelden",
+		"meta": {
+			"title": "Repositories"
+		},
+		"private": "Privat",
+		"public": "Öffentlich",
+		"retry": "Erneut versuchen",
+		"title": "Repositories"
+	},
+	"SecretsPage": {
+		"back": "Zurück zu den Repositories",
+		"create": "Secret erstellen",
+		"description": "Verwalte Repository-Secrets für {owner}/{repo}.",
+		"error": "Secrets konnten nicht geladen werden.",
+		"errors": {
+			"delete-failed": "Secret konnte nicht gelöscht werden.",
+			"missing-fields": "Secret-Name und Wert sind erforderlich.",
+			"missing-value": "Secret-Wert ist erforderlich.",
+			"save-failed": "Secret konnte nicht gespeichert werden."
+		},
+		"fields": {
+			"name": "Secret-Name",
+			"value": "Secret-Wert"
+		},
+		"loading": "Secrets werden geladen...",
+		"meta": {
+			"title": "Secrets"
+		},
+		"retry": "Erneut versuchen",
+		"save": "Speichern",
+		"title": "Secrets",
+		"update": "Aktualisieren",
+		"update-label": "Secret {name} aktualisieren",
+		"update-placeholder": "Neuer Secret-Wert",
+		"delete": "Löschen"
+	},
+	"VariablesPage": {
+		"back": "Zurück zu den Repositories",
+		"create": "Variable erstellen",
+		"description": "Verwalte Repository-Variablen für {owner}/{repo}.",
+		"delete": "Löschen",
+		"error": "Variablen konnten nicht geladen werden.",
+		"errors": {
+			"delete-failed": "Variable konnte nicht gelöscht werden.",
+			"missing-fields": "Variablenname und Wert sind erforderlich.",
+			"save-failed": "Variable konnte nicht gespeichert werden."
+		},
+		"fields": {
+			"name": "Variablenname",
+			"value": "Variablenwert"
+		},
+		"loading": "Variablen werden geladen...",
+		"meta": {
+			"title": "Variablen"
+		},
+		"retry": "Erneut versuchen",
+		"save": "Speichern",
+		"title": "Variablen",
+		"update": "Aktualisieren",
+		"update-label": "Variable {name} aktualisieren"
 	}
 }

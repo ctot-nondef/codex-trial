@@ -6,6 +6,7 @@ const t = useTranslations();
 const links = computed(() => {
 	return {
 		home: { href: { path: "/" }, label: t("AppHeader.links.home") },
+		repos: { href: { path: "/repos" }, label: t("AppHeader.links.repos") },
 	} satisfies Record<string, { href: NuxtLinkProps["href"]; label: string }>;
 });
 </script>

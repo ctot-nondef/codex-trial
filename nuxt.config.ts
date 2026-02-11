@@ -84,6 +84,15 @@ export default defineNuxtConfig({
 		},
 	},
 	runtimeConfig: {
+		github: {
+			clientId: process.env.GITHUB_CLIENT_ID,
+			clientSecret: process.env.GITHUB_CLIENT_SECRET,
+			oauthCallbackUrl: process.env.GITHUB_OAUTH_CALLBACK_URL,
+			oauthScope: process.env.GITHUB_OAUTH_SCOPES,
+		},
+		session: {
+			secret: process.env.SESSION_SECRET,
+		},
 		public: {
 			app: {
 				baseUrl: process.env.NUXT_PUBLIC_APP_BASE_URL,

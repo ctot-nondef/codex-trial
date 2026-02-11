@@ -17,6 +17,25 @@ set required environment variables in `.env.local`:
 cp .env.local.example .env.local
 ```
 
+## github oauth setup
+
+create a github oauth app for local development:
+
+1. go to github → settings → developer settings → oauth apps → “new oauth app”
+2. set homepage url to `http://localhost:3000`
+3. set authorization callback url to `http://localhost:3000/auth/github/callback`
+4. register the app and copy the client id + client secret
+
+add these values to `.env.local`:
+
+```
+GITHUB_CLIENT_ID=...
+GITHUB_CLIENT_SECRET=...
+GITHUB_OAUTH_SCOPES="repo"
+GITHUB_OAUTH_CALLBACK_URL="http://localhost:3000/auth/github/callback"
+SESSION_SECRET="a-long-random-string"
+```
+
 | environment variable                     | required | default    | description                    |
 | ---------------------------------------- | -------- | ---------- | ------------------------------ |
 | NUXT_PUBLIC_APP_BASE_URL                 | true     |            | deployment base url            |
