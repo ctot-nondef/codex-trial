@@ -1,0 +1,54 @@
+{
+	"css.validate": false,
+	"debug.toolBarLocation": "docked",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit"
+	},
+	"editor.defaultFormatter": "oxc.oxc-vscode",
+	"editor.formatOnSave": true,
+	"editor.inlayHints.enabled": "offUnlessPressed",
+	"editor.linkedEditing": true,
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"editor.rulers": [100],
+	"editor.stickyScroll.enabled": true,
+	"eslint.enable": true,
+	"eslint.options": {
+		"flags": ["unstable_native_nodejs_ts_config"]
+	},
+	"eslint.validate": ["javascript", "typescript", "vue"],
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"files.eol": "\n",
+	"html.autoCreateQuotes": false,
+	"i18n-ally.annotations": false,
+	"i18n-ally.keepFulfilled": true,
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.localesPaths": ["./messages"],
+	"i18n-ally.review.enabled": false,
+	"i18n-ally.sortKeys": true,
+	"i18n-ally.tabStyle": "tab",
+	"less.validate": false,
+	"scss.validate": false,
+	"stylelint.enable": true,
+	"stylelint.snippet": ["css", "postcss", "tailwindcss", "vue"],
+	"stylelint.validate": ["css", "postcss", "tailwindcss", "vue"],
+	"tailwindCSS.validate": true,
+	"terminal.integrated.enablePersistentSessions": false,
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.preferences.autoImportFileExcludePatterns": ["lucide-vue-next"],
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.preferences.preferTypeOnlyAutoImports": true,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"workbench.editor.labelFormat": "medium",
+	"workbench.tree.enableStickyScroll": true,
+	"[markdown]": {
+		"editor.wordWrap": "on"
+	},
+	"[mdc]": {
+		"editor.wordWrap": "on"
+	}
+}
